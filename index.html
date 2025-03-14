@@ -12,6 +12,11 @@
         <header class="header">
             <div class="container">
                 <div class="header__inner">
+                    <div class="burger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <a class="header__logo logo" href="/">
                         <img src="img/logo.svg" width="161" height="44" alt="Logo Modular">
                     </a>
@@ -430,17 +435,29 @@
                             <div class="contacts__form-title section-subtitle">Залишите вашу заявку і ми допоможемо реалізувати ваш проєкт</div>
                             <form class="contacts__form" action="#">
                                 <div class="contacts__form-control contacts__form-control--row">
-                                    <input class="contacts__form-input" type="text" placeholder="Ім’я (обов’язкове)">
-                                    <input class="contacts__form-input" type="text" placeholder="Email (обов’язкове)">
+                                    <div class="input-wrapper">
+                                        <label for="your-name" class="visually-hidden">Ім'я</label>
+                                        <input id="your-name" class="contacts__form-input" type="text" placeholder="Ім'я (обов'язкове)">
+                                        <span class="input-icon input-icon-user"></span>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <label for="your-email" class="visually-hidden">Email</label>
+                                        <input id="your-email" class="contacts__form-input" type="email" placeholder="Email (обов'язкове)">
+                                        <span class="input-icon input-icon-email"></span>
+                                    </div>
                                 </div>
                                 <div class="contacts__form-control">
-                                    <input class="contacts__form-input" type="text" placeholder="+38 (0__) ___-__-__">
+                                    <div class="input-wrapper">
+                                        <label for="your-phone" class="visually-hidden">Телефон</label>
+                                        <input id="your-phone" class="contacts__form-input" type="tel" placeholder="+38 (0__) ___-__-__">
+                                        <span class="input-icon input-icon-phone"></span>
+                                    </div>
                                 </div>
                                 <div class="contacts__form-agreement">
-                                    <input class="contacts__form-checkbox" type="checkbox" name="" id="">
-                                    <div class="contacts__form-text">Я надаю свою згоду на обробку наданих мною персональних даних і підтверджую свою згоду з правилами захисту даних, викладеними у наведеній нижче політиці конфіденційності.</div>
+                                    <input class="contacts__form-checkbox" type="checkbox" name="agreement" id="agreement">
+                                    <label for="agreement" class="contacts__form-text">Я надаю свою згоду на обробку наданих мною персональних даних і підтверджую свою згоду з правилами захисту даних, викладеними у наведеній нижче політиці конфіденційності.</label>
                                 </div>
-                                <button class="button button--secondary w-100" type="button">Надіслати заявку</button>
+                                <button class="button button--secondary w-100" type="submit">Надіслати заявку</button>
                             </form>
                         </div>
                     </div>
@@ -451,21 +468,21 @@
             <div class="container">
                 <div class="footer__top">
                     <a href="/" class="footer__logo logo">
-                        <img src="img/logo.svg" alt="Logo Modular">
+                        <img src="img/logo-blue.svg" alt="Logo Modular">
                     </a>
                     <nav class="footer__menu menu">
                         <ul class="menu__list">
-                            <li class="menu__item"><a href="#" class="menu__link"></a>Про нас</li>
-                            <li class="menu__item"><a href="#" class="menu__link"></a>Типи контейнерів</li>
-                            <li class="menu__item"><a href="#" class="menu__link"></a>Модульні будівлі</li>
-                            <li class="menu__item"><a href="#" class="menu__link"></a>Чим можуть бути оснащені</li>
-                            <li class="menu__item"><a href="#" class="menu__link"></a>Наші проекти</li>
+                            <li class="menu__item"><a href="#" class="menu__link">Про нас</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Типи контейнерів</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Модульні будівлі</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Чим можуть бути оснащені</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Наші проекти</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="footer__bottom">
                     <a href="#" class="footer__develop">
-                        <img src="img/develop.svg" alt="">
+                        <img src="img/logo-udigital.svg" width="64" height="16" alt="Логотип Udigital">
                         <span>Розробка Udigital</span>
                     </a>
                     <div class="footer__copyright">
